@@ -1,0 +1,32 @@
+%%!TEX TS-program = pdflatex 
+%%!TEX encoding = UTF-8 Unicode 
+\documentclass[11pt,letterpaper,twoside,openright]{book}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,mexico]{babel}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Seguridad en Redes Inalámbricas}
+\author{Bruno Medina Bolaños Cacho}
+%\date{}                                           % Activate to display a given date or no date
+ 
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+\tableofcontents
+
+\include{chap/1}
+\include{chap/2}
+\include{chap/3}
+\include{chap/4}
+
+
+
+\end{document}  
